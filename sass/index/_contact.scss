@@ -1,0 +1,134 @@
+#contact {
+    background: #EABF9F;
+}
+
+.contact {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 100px 0;
+
+    &__desc {
+        width: 50%;
+    }
+
+    &__title {
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 42px;
+        color: #01384D;
+        margin-bottom: 10px;
+    }
+
+    &__text {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 23px;
+        color: #01384D;
+    }
+
+    &__form {
+        width: 50%;
+        display: flex;
+        justify-content: end;
+    }
+
+    &__input-box {
+        display: flex;
+        background: #fff;
+        border-radius: 5px;
+        max-width: 400px;
+        width: 100%;
+        margin-right: 15px;
+    }
+
+    &__label {
+        position: relative;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 19px;
+        color: #01384D;
+        padding: 20px 10px;
+        padding-left: 20px;
+
+        span {
+            display: inline-block;
+            width: 1px;
+            height: 12px;
+            opacity: 0.6;
+            background-color: #01384D;
+            position: absolute;
+            top: 50%;
+            right: 0;
+            transform: translateY(-50%);
+        }
+    }
+
+    &__input {
+        display: inline-block;
+        width: 100%;
+        border: none;
+        padding-left: 15px;
+
+        &::placeholder {
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 19px;
+            color: #01384D;
+            opacity: 0.4;
+        }
+    }
+
+    &__btn {
+        display: inline-block;
+        width: 50%;
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 21px;
+        color: #fff;
+        background: #01384D;
+        border-radius: 5px;
+        padding: 20px;
+    }
+}
+@media screen and (max-width: 768px) {
+    .contact{
+        &__input-box{
+            max-width: 700px;
+        }
+    }
+}
+@media screen and (max-width: 768px) {
+    .contact{
+
+        &__desc {
+            width: 100%;
+        }
+
+        &__title{
+            font-size: 24px;
+            line-height: 24px;
+        }
+        
+        &__text{
+            margin-bottom: 47px;
+        }
+
+        &__form {
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: stretch;
+        }
+
+        &__input-box{
+            margin-bottom: 20px;
+            margin-right: 0;
+        }
+
+        &__btn{
+            width: 100%;
+        }
+
+    }
+}
