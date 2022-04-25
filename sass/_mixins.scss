@@ -18,14 +18,22 @@
 
 @mixin center-absolute {
   position: absolute;
-  transform: translate(-50%,-50%);
+  transform: translate(-50%, -50%);
 }
 
 @mixin tr-bg_cl {
   transition: color 0.3s ease,
-  background 0.3s ease;
+    background 0.3s ease;
 }
 
 @mixin tr-trans {
   transition: transform 0.3s ease;
+}
+
+@mixin main-title {
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 50px;
+  color: #01384D;
+  text-align: center;
 }
