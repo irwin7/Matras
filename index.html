@@ -1,565 +1,734 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-   <meta charset="UTF-8">
-   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-   <!-- Short icon -->
-   <link rel="shortcut icon"
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+    <!-- Short icon -->
+    <link
+      rel="shortcut icon"
       href="https://cdn-icons.flaticon.com/png/512/15/premium/15476.png?token=exp=1637940272~hmac=907a9bb61d21e2d1bad1b35c9a0ceaf3"
-      type="image/x-icon">
-   <!-- Font Awesome -->
-   <script src="https://kit.fontawesome.com/5235cac873.js" crossorigin="anonymous"></script>
-   <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
-      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
-   <!-- CSS Files -->
-   <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
-   <link rel="stylesheet" href="./css/flex-box.css">
-   <link rel="stylesheet" href="./css/global.css">
-   <link rel="stylesheet" href="./css/main.min.css">
-   <title> Matras </title>
-   <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
-   <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
-</head>
+      type="image/x-icon"
+    />
+    <!-- Font Awesome -->
+    <script
+      src="https://kit.fontawesome.com/5235cac873.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
+    <!-- CSS Files -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
+    <link rel="stylesheet" href="./css/flex-box.css" />
+    <link rel="stylesheet" href="./css/global.css" />
+    <link rel="stylesheet" href="./css/main.min.css" />
+    <title>Matras</title>
+    <link rel="stylesheet" type="text/css" href="slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css" />
+  </head>
 
-<body>
-
-   <header id="header" class="header">
+  <body>
+    <header id="header" class="header">
       <div class="header__modal modal">
-         <div class="modal__inner">
-            <ul class="modal__list"></ul>
-            <a class="header__btn modal__btn" href="#">Buyurtma berish</a>
-         </div>
-         <div class="modal__wrapper">
-            <a class="header__call modal__call row align-center" href='tel:+992'>
-               <img src="./images/phone.svg" width="20">
-               +998 90 123 45 67
-            </a>
-         </div>
+        <div class="modal__inner">
+          <ul class="modal__list"></ul>
+          <a class="header__btn modal__btn" href="#">Buyurtma berish</a>
+        </div>
+        <div class="modal__wrapper">
+          <a class="header__call modal__call row align-center" href="tel:+992">
+            <img src="./images/phone.svg" width="20" />
+            +998 90 123 45 67
+          </a>
+        </div>
       </div>
       <div class="header__modals modals">
-         <div class="modals__inner center-absolute">
-            <button class="modals__close">
-               <i class="fal fa-times"></i>
-            </button>
-            <span class="modals__title">Buyurtma qilish</span>
-            <form class="modals__form form" action="html-academy.php">
-               <input class="form__inp" type="text" placeholder="Ismingizni yozing">
-               <label class="form__lnum row between align-center">
-                  <span>+998</span>
-                  <input class="form__inp form__inp-num" type="number">
-               </label>
-               <label class="form__label">
-                  <span>Mahsulotlarni toifasini tanlang</span>
-                  <input class="form__inp" type="text">
-                  <i class="far fa-angle-down"></i>
-               </label>
-               <label class="form__label">
-                  <span>Miqdorni tanlang</span>
-                  <div class="row between align-center">
-                     <button class="count count-m" type="button">-</button>
-                     <input class="form__inp form__inp-count" value='1'>
-                     <button class="count count-p" type="button">+</button>
-                  </div>
-               </label>
-               <button class="form__btn" type="button">Yuborish</button>
-               <button></button>
-            </form>
-         </div>
-         <div class="modals__wrapper wrap center-absolute">
-            <button class="wrap__close">
-               <i class="far fa-times"></i>
-            </button>
-            <p class="wrap__title">Arizangiz muvaffaqiyatli yuborildi</p>
-            <img src="./images/modals-img.svg" alt="img">
-            <p class="wrap__txt">Tez orada operatorlarimiz siz bilan bog’lanishadi</p>
-            <button class="wrap__btn">Ok</button>
-         </div>
+        <div class="modals__inner center-absolute">
+          <button class="modals__close">
+            <i class="fal fa-times"></i>
+          </button>
+          <span class="modals__title">Buyurtma qilish</span>
+          <form class="modals__form form" action="html-academy.php">
+            <input
+              class="form__inp"
+              type="text"
+              placeholder="Ismingizni yozing"
+            />
+            <label class="form__lnum row between align-center">
+              <span>+998</span>
+              <input class="form__inp form__inp-num" type="number" />
+            </label>
+            <label class="form__label">
+              <span>Mahsulotlarni toifasini tanlang</span>
+              <input class="form__inp" type="text" />
+              <i class="far fa-angle-down"></i>
+            </label>
+            <label class="form__label">
+              <span>Miqdorni tanlang</span>
+              <div class="row between align-center">
+                <button class="count count-m" type="button">-</button>
+                <input class="form__inp form__inp-count" value="1" />
+                <button class="count count-p" type="button">+</button>
+              </div>
+            </label>
+            <button class="form__btn" type="button">Yuborish</button>
+            <button></button>
+          </form>
+        </div>
+        <div class="modals__wrapper wrap center-absolute">
+          <button class="wrap__close">
+            <i class="far fa-times"></i>
+          </button>
+          <p class="wrap__title">Arizangiz muvaffaqiyatli yuborildi</p>
+          <img src="./images/modals-img.svg" alt="img" />
+          <p class="wrap__txt">
+            Tez orada operatorlarimiz siz bilan bog’lanishadi
+          </p>
+          <button class="wrap__btn">Ok</button>
+        </div>
       </div>
       <div class="container">
-
-         <nav class="header__nav nav">
-            <ul class="nav__list row"></ul>
-         </nav>
-         <div class="header__inner row between">
-            <a href="index.html">
-               <img src="./images/logo.svg" alt="logo">
+        <nav class="header__nav nav">
+          <ul class="nav__list row"></ul>
+        </nav>
+        <div class="header__inner row between">
+          <a href="index.html">
+            <img src="./images/logo.svg" alt="logo" />
+          </a>
+          <div class="row align-center">
+            <a class="header__call row align-center" href="tel:+992">
+              <img src="./images/phone.svg" width="20" />
+              +998 90 123 45 67
             </a>
-            <div class="row align-center">
-               <a class="header__call row align-center" href='tel:+992'>
-                  <img src="./images/phone.svg" width="20">
-                  +998 90 123 45 67
-               </a>
-               <a class="header__btn modals__open" href="#">Buyurtma berish</a>
-               <button class="header__burger">
-                  <i class="far fa-bars"></i>
-               </button>
-               <button class="header__close">
-                  <i class="fal fa-times"></i>
-               </button>
-            </div>
-         </div>
-
+            <a class="header__btn modals__open" href="#">Buyurtma berish</a>
+            <button class="header__burger">
+              <i class="far fa-bars"></i>
+            </button>
+            <button class="header__close">
+              <i class="fal fa-times"></i>
+            </button>
+          </div>
+        </div>
       </div>
-   </header>
+    </header>
 
-   <main>
-
+    <main>
       <section id="main" class="main">
-         <div class="container">
-
-            <div class="main__inner relative-p">
-               <div class="relative-p" style="z-index: 5;">
-                  <h1 class="main__title">Kechalari sokin dam oling</h1>
-                  <a class="main__btn" href="#">Kategoriyalar</a>
-               </div>
-               <div class="fade">
-                  <div><img src="./images/matras1.png" alt="matras"></div>
-                  <div><img src="./images/matras1.png" alt="matras"></div>
-                  <div><img src="./images/matras1.png" alt="matras"></div>
-               </div>
-               <a class="main__btn main__btn2" href="#">Kategoriyalar</a>
+        <div class="container">
+          <div class="main__inner relative-p">
+            <div class="relative-p" style="z-index: 5">
+              <h1 class="main__title">Kechalari sokin dam oling</h1>
+              <a class="main__btn" href="#">Kategoriyalar</a>
             </div>
-
-         </div>
+            <div class="fade">
+              <div><img src="./images/matras1.png" alt="matras" /></div>
+              <div><img src="./images/matras1.png" alt="matras" /></div>
+              <div><img src="./images/matras1.png" alt="matras" /></div>
+            </div>
+            <a class="main__btn main__btn2" href="#">Kategoriyalar</a>
+          </div>
+        </div>
       </section>
 
       <section id="statistics">
-         <div class="container">
-            <div class="statistics">
-               <ul class="statistics__list">
-                  <li class="statistics__item col-lg-3 col-xs-6">
-                     <p class="statistics__title">7</p>
-                     <p class="statistics__text">yillik tajriba</p>
-                  </li>
-                  <li class="statistics__item col-lg-3 col-xs-6">
-                     <p class="statistics__title">10k+</p>
-                     <p class="statistics__text">mamnun mijozlar</p>
-                  </li>
-                  <li class="statistics__item col-lg-3 col-xs-6">
-                     <p class="statistics__title">10</p>
-                     <p class="statistics__text">yillik kafolat</p>
-                  </li>
-                  <li class="statistics__item col-lg-3 col-xs-6">
-                     <p class="statistics__title">3</p>
-                     <p class="statistics__text">kunda yetkazish</p>
-                  </li>
-               </ul>
-            </div>
-         </div>
+        <div class="container">
+          <div class="statistics">
+            <ul class="statistics__list">
+              <li class="statistics__item col-lg-3 col-xs-6">
+                <p class="statistics__title">7</p>
+                <p class="statistics__text">yillik tajriba</p>
+              </li>
+              <li class="statistics__item col-lg-3 col-xs-6">
+                <p class="statistics__title">10k+</p>
+                <p class="statistics__text">mamnun mijozlar</p>
+              </li>
+              <li class="statistics__item col-lg-3 col-xs-6">
+                <p class="statistics__title">10</p>
+                <p class="statistics__text">yillik kafolat</p>
+              </li>
+              <li class="statistics__item col-lg-3 col-xs-6">
+                <p class="statistics__title">3</p>
+                <p class="statistics__text">kunda yetkazish</p>
+              </li>
+            </ul>
+          </div>
+        </div>
       </section>
 
       <section id="products">
-         <div class="container">
-            <div class="products">
-               <header class="products__header">
-                  <h3 class="products__title">Bizning mahsulotlar</h3>
-                  <div class="products__menu">
-                     <button class="aroows arrow-left"><i class="fa-solid fa-chevron-left"></i></button>
-                     <ul class="products__menu-list">
-                        <li class="products__menu-item products__menu-item--active"><button
-                              class="products__menu-btn">Barchasi</button></li>
-                        <li class="products__menu-item"><button class="products__menu-btn">Model A+</button></li>
-                        <li class="products__menu-item"><button class="products__menu-btn">Model B+</button></li>
-                        <li class="products__menu-item"><button class="products__menu-btn">Model C</button></li>
-                        <li class="products__menu-item"><button class="products__menu-btn">Model C+</button></li>
-                        <li class="products__menu-item"><button class="products__menu-btn">Model D</button></li>
-                        <li class="products__menu-item"><button class="products__menu-btn">Model Yevro</button></li>
-                        <li class="products__menu-item"><button class="products__menu-btn">Yangi tovarlar</button></li>
-                        <li class="products__menu-item"><button class="products__menu-btn">Model A</button></li>
-                     </ul>
-                     <button class="aroows arrow-right"><i class="fa-solid fa-chevron-right"></i></button>
+        <div class="container">
+          <div class="products">
+            <header class="products__header">
+              <h3 class="products__title">Bizning mahsulotlar</h3>
+              <div class="products__menu">
+                <button class="aroows arrow-left">
+                  <i class="fa-solid fa-chevron-left"></i>
+                </button>
+                <ul class="products__menu-list">
+                  <li class="products__menu-item products__menu-item--active">
+                    <button class="products__menu-btn">Barchasi</button>
+                  </li>
+                  <li class="products__menu-item">
+                    <button class="products__menu-btn">Model A+</button>
+                  </li>
+                  <li class="products__menu-item">
+                    <button class="products__menu-btn">Model B+</button>
+                  </li>
+                  <li class="products__menu-item">
+                    <button class="products__menu-btn">Model C</button>
+                  </li>
+                  <li class="products__menu-item">
+                    <button class="products__menu-btn">Model C+</button>
+                  </li>
+                  <li class="products__menu-item">
+                    <button class="products__menu-btn">Model D</button>
+                  </li>
+                  <li class="products__menu-item">
+                    <button class="products__menu-btn">Model Yevro</button>
+                  </li>
+                  <li class="products__menu-item">
+                    <button class="products__menu-btn">Yangi tovarlar</button>
+                  </li>
+                  <li class="products__menu-item">
+                    <button class="products__menu-btn">Model A</button>
+                  </li>
+                </ul>
+                <button class="aroows arrow-right">
+                  <i class="fa-solid fa-chevron-right"></i>
+                </button>
+              </div>
+            </header>
+            <div class="products__hero">
+              <ul class="products__list">
+                <li class="products__item product">
+                  <div class="product__imgs">
+                    <div class="product__badges">
+                      <p class="product__badge">Yangi mahsulot</p>
+                      <button class="product__extend-btn">
+                        <i class="fa-solid fa-magnifying-glass-plus"></i>
+                      </button>
+                    </div>
+                    <img
+                      class="product__img"
+                      src="./imgs/matras.png"
+                      alt="matras"
+                    />
                   </div>
-               </header>
-               <div class="products__hero">
-                  <ul class="products__list">
-                     <li class="products__item product">
-                        <div class="product__imgs">
-                           <div class="product__badges">
-                              <p class="product__badge">Yangi mahsulot</p>
-                              <button class="product__extend-btn"><i
-                                    class="fa-solid fa-magnifying-glass-plus"></i></button>
-                           </div>
-                           <img class="product__img" src="./imgs/matras.png" alt="matras">
-                        </div>
-                        <div class="product__desc">
-                           <p class="product__title">Ortopedik Eko matras</p>
-                           <ul class="product__infos">
-                              <li class="product__info">
-                                 <p class="product__info-title">Yuklama</p>
-                                 <p class="product__info-text">
-                                    <span class="product__info-desc">150</span>
-                                    kg
-                                 </p>
-                              </li>
-                              <li class="product__info">
-                                 <p class="product__info-title">Kafolat</p>
-                                 <p class="product__info-text">
-                                    <span class="product__info-desc">3</span>
-                                    yil
-                                 </p>
-                              </li>
-                              <li class="product__info">
-                                 <p class="product__info-title">O'lchami</p>
-                                 <p class="product__info-text">
-                                    <span class="product__info-desc">200x120x40</span>
-                                 </p>
-                              </li>
-                              <li class="product__info">
-                                 <p class="product__info-title">Sig'imi</p>
-                                 <p class="product__info-text">
-                                    <span class="product__info-desc">2</span>
-                                    kishilik
-                                 </p>
-                              </li>
-                           </ul>
-                           <p class="product__about">Penatibus viverra gravida rhoncus in. At turpis morbi ante tortor a
-                              est. Habitant adipiscing ut sed pulvinar tellus, ut urna, fermentum. Porttitor senectus
-                              lorem rhoncus facilisi ac dictum varius egestas.</p>
-                           <div class="product__price">
-                              <p class="product__price-title">Narxi</p>
-                              <p class="product__price-text">
-                                 <span class="product__price-desc">1 699 999</span>
-                                 so'm
-                              </p>
-                           </div>
-                           <button class="product__btn">Buyurtma berish <i
-                                 class="fa-solid fa-cart-shopping"></i></button>
-                        </div>
-                     </li>
-                  </ul>
-               </div>
+                  <div class="product__desc">
+                    <p class="product__title">Ortopedik Eko matras</p>
+                    <ul class="product__infos">
+                      <li class="product__info">
+                        <p class="product__info-title">Yuklama</p>
+                        <p class="product__info-text">
+                          <span class="product__info-desc">150</span>
+                          kg
+                        </p>
+                      </li>
+                      <li class="product__info">
+                        <p class="product__info-title">Kafolat</p>
+                        <p class="product__info-text">
+                          <span class="product__info-desc">3</span>
+                          yil
+                        </p>
+                      </li>
+                      <li class="product__info">
+                        <p class="product__info-title">O'lchami</p>
+                        <p class="product__info-text">
+                          <span class="product__info-desc">200x120x40</span>
+                        </p>
+                      </li>
+                      <li class="product__info">
+                        <p class="product__info-title">Sig'imi</p>
+                        <p class="product__info-text">
+                          <span class="product__info-desc">2</span>
+                          kishilik
+                        </p>
+                      </li>
+                    </ul>
+                    <p class="product__about">
+                      Penatibus viverra gravida rhoncus in. At turpis morbi ante
+                      tortor a est. Habitant adipiscing ut sed pulvinar tellus,
+                      ut urna, fermentum. Porttitor senectus lorem rhoncus
+                      facilisi ac dictum varius egestas.
+                    </p>
+                    <div class="product__price">
+                      <p class="product__price-title">Narxi</p>
+                      <p class="product__price-text">
+                        <span class="product__price-desc">1 699 999</span>
+                        so'm
+                      </p>
+                    </div>
+                    <button class="product__btn">
+                      Buyurtma berish <i class="fa-solid fa-cart-shopping"></i>
+                    </button>
+                  </div>
+                </li>
+              </ul>
             </div>
-         </div>
+          </div>
+        </div>
       </section>
 
       <section id="about" class="about">
-         <div class="container">
-
-            <div class="about__inner row between align-center">
-               <div class="about__titles">
-                  <h2>Dream Cloud kompaniyasi haqida</h2>
-                  <p>Penatibus viverra gravida rhoncus in. At turpis morbi ante tortor a est. Habitant adipiscing ut sed pulvinar tellus, ut urna, fermentum:</p>
-                  <ul>
-                     <li>Penatibus viverra gravida rhoncus in.</li>
-                     <li>Dolor integer in interdum viverra risus dolor enim.</li>
-                     <li>Penatibus viverra gravida rhoncus in</li>
-                  </ul>
-               </div>
-               <img src="./images/about1.jpg" alt="about">
+        <div class="container">
+          <div class="about__inner row between align-center">
+            <div class="about__titles">
+              <h2>Dream Cloud kompaniyasi haqida</h2>
+              <p>
+                Penatibus viverra gravida rhoncus in. At turpis morbi ante
+                tortor a est. Habitant adipiscing ut sed pulvinar tellus, ut
+                urna, fermentum:
+              </p>
+              <ul>
+                <li>Penatibus viverra gravida rhoncus in.</li>
+                <li>Dolor integer in interdum viverra risus dolor enim.</li>
+                <li>Penatibus viverra gravida rhoncus in</li>
+              </ul>
             </div>
-            <div class="about__inner about__wrapper row between align-center">
-               <div class="about__titles">
-                  <p>Libero erat praesent ullamcorper eget tortor sed et. Nec id lobortis gravida vitae. Scelerisque id fusce vitae ut. Integer sed vulputate sed nec. Arcu id mattis erat et id. </p>
-                  <ul>
-                     <li>Penatibus viverra gravida rhoncus in.</li>
-                     <li>Dolor integer in interdum viverra risus dolor enim.</li>
-                     <li>Penatibus viverra gravida rhoncus in</li>
-                     <li>Dolor integer in interdum viverra risus dolor enim.</li>
-                  </ul>
-                  <p class="txt">Ac tortor volutpat pellentesque mauris nisi, praesent. Et tempus accumsan est elementum feugiat arcu mauris tincidunt. Eget faucibus pharetra et luctus eget ut fames. A cursus elementum egestas eu scelerisque id.</p>
-               </div>
-               <img src="./images/about2.jpg" alt="about">
-            </div>  
-
-         </div>
+            <img src="./images/about1.jpg" alt="about" />
+          </div>
+          <div class="about__inner about__wrapper row between align-center">
+            <div class="about__titles">
+              <p>
+                Libero erat praesent ullamcorper eget tortor sed et. Nec id
+                lobortis gravida vitae. Scelerisque id fusce vitae ut. Integer
+                sed vulputate sed nec. Arcu id mattis erat et id.
+              </p>
+              <ul>
+                <li>Penatibus viverra gravida rhoncus in.</li>
+                <li>Dolor integer in interdum viverra risus dolor enim.</li>
+                <li>Penatibus viverra gravida rhoncus in</li>
+                <li>Dolor integer in interdum viverra risus dolor enim.</li>
+              </ul>
+              <p class="txt">
+                Ac tortor volutpat pellentesque mauris nisi, praesent. Et tempus
+                accumsan est elementum feugiat arcu mauris tincidunt. Eget
+                faucibus pharetra et luctus eget ut fames. A cursus elementum
+                egestas eu scelerisque id.
+              </p>
+            </div>
+            <img src="./images/about2.jpg" alt="about" />
+          </div>
+        </div>
       </section>
 
       <section id="choose" class="choose">
-         <div class="container">
-
-            <h2>Nega bizni tanlashadi</h2>
-            <ul class="row between">
-               <li>
-                  <img src="./images/choose1.jpg" alt="img">
-                  <div class="titles">
-                     <h3>Yetkazib berish</h3>
-                     <p>Toshkent bo'ylab bepul o'lchov va etkazib berish</p>
-                  </div>
-               </li>
-               <li>
-                  <img src="./images/choose2.jpg" alt="img">
-                  <div class="titles">
-                     <h3>Qo'llab-quvvatlash</h3>
-                     <p>Bizning qo'llab-quvvatlash xizmati sizga har qanday savolda yordam beradi va menejerlarning </p>
-                  </div>
-               </li>
-               <li>
-                  <img src="./images/choose3.jpg" alt="img">
-                  <div class="titles">
-                     <h3>Kafolat</h3>
-                     <p>Biz matraslarimiz uchun 8 yilgacha kafolat beramiz. Agar matras kamida 25 mm qisqartirilsa.</p>
-                  </div>
-               </li>
-            </ul>
-
-         </div>
+        <div class="container">
+          <h2>Nega bizni tanlashadi</h2>
+          <ul class="row between">
+            <li>
+              <img src="./images/choose1.jpg" alt="img" />
+              <div class="titles">
+                <h3>Yetkazib berish</h3>
+                <p>Toshkent bo'ylab bepul o'lchov va etkazib berish</p>
+              </div>
+            </li>
+            <li>
+              <img src="./images/choose2.jpg" alt="img" />
+              <div class="titles">
+                <h3>Qo'llab-quvvatlash</h3>
+                <p>
+                  Bizning qo'llab-quvvatlash xizmati sizga har qanday savolda
+                  yordam beradi va menejerlarning
+                </p>
+              </div>
+            </li>
+            <li>
+              <img src="./images/choose3.jpg" alt="img" />
+              <div class="titles">
+                <h3>Kafolat</h3>
+                <p>
+                  Biz matraslarimiz uchun 8 yilgacha kafolat beramiz. Agar
+                  matras kamida 25 mm qisqartirilsa.
+                </p>
+              </div>
+            </li>
+          </ul>
+        </div>
       </section>
 
       <section id="locate" class="locate">
-         <div class="container">
-
-            <div class="fades">
-               <div>
-                  <div class="locates row between align-center">
-                     <div class="titles">
-                        <h2>Manzilimiz</h2>
-                        <h3>Toshkent, Parkent ko'chasi, 176-uy</h3>
-                        <p>Mo’ljal: Qoraqamish 2/1, Tursunxodjayeva ro’parasi, Milliy bog’ metro bekati.</p>
-                        <button>
-                           <i class="far fa-map-marker-alt"></i>
-                           Geolokatsiya
-                        </button>
-                     </div>
-                     <img src="./images/locate1.jpg" alt="locate">
-                  </div>
-               </div>
-               <div>
-                  <div class="locates row between align-center">
-                     <div class="titles">
-                        <h2>Manzilimiz</h2>
-                        <h3>Toshkent, Umid ko'chasi, 13-uy</h3>
-                        <p>Mo’ljal: Qoraqamish 2/1, Tursunxodjayeva ro’parasi, Milliy bog’ metro bekati.</p>
-                        <button>
-                           <i class="fas fa-map-marker-alt"></i>
-                           Geolokatsiya
-                        </button>
-                     </div>
-                     <img src="./images/choose3.jpg" alt="locate">
-                  </div>
-               </div>
-               <div>
-                  <div class="locates row between align-center">
-                     <div class="titles">
-                        <h2>Manzilimiz</h2>
-                        <h3>Toshkent, Amir Temur ko'chasi, 98-uy</h3>locates 
-                        <p>Mo’ljal: Qoraqamish 2/1, Tursunxodjayeva ro’parasi, Milliy bog’ metro bekati.</p>
-                        <button>
-                           <i class="fad fa-map-marker-alt"></i>
-                           Geolokatsiya
-                        </button>
-                     </div>
-                     <img src="./images/about2.jpg" alt="locate">
-                  </div>
-               </div>
+        <div class="container">
+          <div class="fades">
+            <div>
+              <div class="locates row between align-center">
+                <div class="titles">
+                  <h2>Manzilimiz</h2>
+                  <h3>Toshkent, Parkent ko'chasi, 176-uy</h3>
+                  <p>
+                    Mo’ljal: Qoraqamish 2/1, Tursunxodjayeva ro’parasi, Milliy
+                    bog’ metro bekati.
+                  </p>
+                  <button>
+                    <i class="far fa-map-marker-alt"></i>
+                    Geolokatsiya
+                  </button>
+                </div>
+                <img src="./images/locate1.jpg" alt="locate" />
+              </div>
             </div>
+            <div>
+              <div class="locates row between align-center">
+                <div class="titles">
+                  <h2>Manzilimiz</h2>
+                  <h3>Toshkent, Umid ko'chasi, 13-uy</h3>
+                  <p>
+                    Mo’ljal: Qoraqamish 2/1, Tursunxodjayeva ro’parasi, Milliy
+                    bog’ metro bekati.
+                  </p>
+                  <button>
+                    <i class="fas fa-map-marker-alt"></i>
+                    Geolokatsiya
+                  </button>
+                </div>
+                <img src="./images/choose3.jpg" alt="locate" />
+              </div>
+            </div>
+            <div>
+              <div class="locates row between align-center">
+                <div class="titles">
+                  <h2>Manzilimiz</h2>
+                  <h3>Toshkent, Amir Temur ko'chasi, 98-uy</h3>
+                  locates
+                  <p>
+                    Mo’ljal: Qoraqamish 2/1, Tursunxodjayeva ro’parasi, Milliy
+                    bog’ metro bekati.
+                  </p>
+                  <button>
+                    <i class="fad fa-map-marker-alt"></i>
+                    Geolokatsiya
+                  </button>
+                </div>
+                <img src="./images/about2.jpg" alt="locate" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
 
       <section id="technologies">
-         <div class="container">
-            <div class="technologies">
-               <h2 class="technologies__title">Ishlab chiqarish texnologiyalari</h2>
-               <ul class="technologies__list">
-                  <li class="technologies__item">
-                     <p class="technologies__item-title">Memoriform</p>
-                     <div class="technologies__preview-box">
-                        <img src="./imgs/preview/img-1.png" alt="technologies" class="technologies__img">
-                        <div class="technologies__preview-iframe">
-                           <iframe class="technologies__iframe" src="https://www.youtube.com/embed/PZdNmRy_ghk"
-                              title="YouTube video player" frameborder="0"
-                              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                              allowfullscreen></iframe>
-                        </div>
-                     </div>
-                     <p class="technologies__text">Lectus pellentesque senectus elit donec massa ipsum ultricies dui.
-                        Bibendum et enim fringilla tincidunt ligula non, condimentum nunc.</p>
-                  </li>
-                  <li class="technologies__item">
-                     <p class="technologies__item-title">Tabiiy lateks</p>
-                     <div class="technologies__preview-box">
-                        <img src="./imgs/preview/img-1.png" alt="technologies" class="technologies__img">
-                        <div class="technologies__preview-iframe">
-                           <iframe class="technologies__iframe" src="https://www.youtube.com/embed/PZdNmRy_ghk"
-                              title="YouTube video player" frameborder="0"
-                              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                              allowfullscreen></iframe>
-                        </div>
-                     </div>
-                     <p class="technologies__text">Lectus pellentesque senectus elit donec massa ipsum ultricies dui.
-                        Bibendum et enim fringilla tincidunt ligula non, condimentum nunc.</p>
-                  </li>
-                  <li class="technologies__item">
-                     <p class="technologies__item-title">Mustaqil prujina</p>
-                     <div class="technologies__preview-box">
-                        <img src="./imgs/preview/img-1.png" alt="technologies" class="technologies__img">
-                        <div class="technologies__preview-iframe">
-                           <iframe class="technologies__iframe" src="https://www.youtube.com/embed/PZdNmRy_ghk"
-                              title="YouTube video player" frameborder="0"
-                              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                              allowfullscreen></iframe>
-                        </div>
-                     </div>
-                     <p class="technologies__text">Lectus pellentesque senectus elit donec massa ipsum ultricies dui.
-                        Bibendum et enim fringilla tincidunt ligula non, condimentum nunc.</p>
-                  </li>
-               </ul>
-            </div>
-         </div>
+        <div class="container">
+          <div class="technologies">
+            <h2 class="technologies__title">
+              Ishlab chiqarish texnologiyalari
+            </h2>
+            <ul class="technologies__list">
+              <li class="technologies__item">
+                <p class="technologies__item-title">Memoriform</p>
+                <div class="technologies__preview-box">
+                  <img
+                    src="./imgs/preview/img-1.png"
+                    alt="technologies"
+                    class="technologies__img"
+                  />
+                  <div class="technologies__preview-iframe">
+                    <iframe
+                      class="technologies__iframe"
+                      src="https://www.youtube.com/embed/PZdNmRy_ghk"
+                      title="YouTube video player"
+                      frameborder="0"
+                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                      allowfullscreen
+                    ></iframe>
+                  </div>
+                </div>
+                <p class="technologies__text">
+                  Lectus pellentesque senectus elit donec massa ipsum ultricies
+                  dui. Bibendum et enim fringilla tincidunt ligula non,
+                  condimentum nunc.
+                </p>
+              </li>
+              <li class="technologies__item">
+                <p class="technologies__item-title">Tabiiy lateks</p>
+                <div class="technologies__preview-box">
+                  <img
+                    src="./imgs/preview/img-1.png"
+                    alt="technologies"
+                    class="technologies__img"
+                  />
+                  <div class="technologies__preview-iframe">
+                    <iframe
+                      class="technologies__iframe"
+                      src="https://www.youtube.com/embed/PZdNmRy_ghk"
+                      title="YouTube video player"
+                      frameborder="0"
+                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                      allowfullscreen
+                    ></iframe>
+                  </div>
+                </div>
+                <p class="technologies__text">
+                  Lectus pellentesque senectus elit donec massa ipsum ultricies
+                  dui. Bibendum et enim fringilla tincidunt ligula non,
+                  condimentum nunc.
+                </p>
+              </li>
+              <li class="technologies__item">
+                <p class="technologies__item-title">Mustaqil prujina</p>
+                <div class="technologies__preview-box">
+                  <img
+                    src="./imgs/preview/img-1.png"
+                    alt="technologies"
+                    class="technologies__img"
+                  />
+                  <div class="technologies__preview-iframe">
+                    <iframe
+                      class="technologies__iframe"
+                      src="https://www.youtube.com/embed/PZdNmRy_ghk"
+                      title="YouTube video player"
+                      frameborder="0"
+                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                      allowfullscreen
+                    ></iframe>
+                  </div>
+                </div>
+                <p class="technologies__text">
+                  Lectus pellentesque senectus elit donec massa ipsum ultricies
+                  dui. Bibendum et enim fringilla tincidunt ligula non,
+                  condimentum nunc.
+                </p>
+              </li>
+            </ul>
+          </div>
+        </div>
       </section>
 
       <section id="contact">
-         <div class="container">
-            <div class="contact">
-               <div class="contact__desc">
-                  <p class="contact__title">Sizni qiziqtirdimi?</p>
-                  <p class="contact__text">Raqamingizni qoldiring, biz sizga yana qo'ng'iroq qilamiz</p>
-               </div>
-               <form class="contact__form" action="https://echo.htmlacademy.ru/" method="post">
-                  <div class="contact__input-box">
-                     <label for="contact-tel" class="contact__label">+998<span></span></label>
-                     <input class="contact__input" type="tel" name="tel" id="contact-tel"
-                        placeholder="Raqamingizni yozing" required>
-                  </div>
-                  <button class="contact__btn" type="submit">Yuborish</button>
-               </form>
+        <div class="container">
+          <div class="contact">
+            <div class="contact__desc">
+              <p class="contact__title">Sizni qiziqtirdimi?</p>
+              <p class="contact__text">
+                Raqamingizni qoldiring, biz sizga yana qo'ng'iroq qilamiz
+              </p>
             </div>
-         </div>
+            <form
+              class="contact__form"
+              action="https://echo.htmlacademy.ru/"
+              method="post"
+            >
+              <div class="contact__input-box">
+                <label for="contact-tel" class="contact__label"
+                  >+998<span></span
+                ></label>
+                <input
+                  class="contact__input"
+                  type="tel"
+                  name="tel"
+                  id="contact-tel"
+                  placeholder="Raqamingizni yozing"
+                  required
+                />
+              </div>
+              <button class="contact__btn" type="submit">Yuborish</button>
+            </form>
+          </div>
+        </div>
       </section>
+    </main>
 
-   </main>
-
-   <footer id="footer" class="footer">
+    <footer id="footer" class="footer">
       <div class="container">
-         <div class="footer">
-            <div class="footer__navbar">
-               <ul class="footer__nav-list">
-                  <li class="footer__nav-item">
-                     <a href="#" class="footer__nav-link">Biz haqimizda</a>
-                  </li>
-                  <li class="footer__nav-item">
-                     <a href="#" class="footer__nav-link">Katalog</a>
-                  </li>
-                  <li class="footer__nav-item">
-                     <a href="#" class="footer__nav-link">Aksiya</a>
-                  </li>
-                  <li class="footer__nav-item">
-                     <a href="#" class="footer__nav-link">Manzilimiz</a>
-                  </li>
-               </ul>
-               <ul class="footer__list">
-                  <li class="footer__item">
-                     <a href="#" class="footer__link" target="_blank">
-                        <i class="fa-brands fa-facebook-square"></i>
-                     </a>
-                  </li>
-                  <li class="footer__item">
-                     <a href="#" class="footer__link" target="_blank">
-                        <i class="fa-brands fa-twitter"></i>
-                     </a>
-                  </li>
-                  <li class="footer__item">
-                     <a href="#" class="footer__link" target="_blank">
-                        <i class="fa-brands fa-vimeo-v"></i>
-                     </a>
-                  </li>
-                  <li class="footer__item">
-                     <a href="#" class="footer__link" target="_blank">
-                        <i class="fa-brands fa-youtube"></i>
-                     </a>
-                  </li>
-               </ul>
-            </div>
-            <div class="footer__ads">
-               <p class="footer__text">© 2021 Dream Cloud. Barcha huquqlar himoyalangan.</p>
-               <img class="footer__img" src="./imgs/vizitka.png" alt="vizitka">
-            </div>
-            <button class="up"><i class="fa-solid fa-arrow-up"></i></button>
-         </div>
+        <div class="footer">
+          <div class="footer__navbar">
+            <ul class="footer__nav-list">
+              <li class="footer__nav-item">
+                <a href="#" class="footer__nav-link">Biz haqimizda</a>
+              </li>
+              <li class="footer__nav-item">
+                <a href="#" class="footer__nav-link">Katalog</a>
+              </li>
+              <li class="footer__nav-item">
+                <a href="#" class="footer__nav-link">Aksiya</a>
+              </li>
+              <li class="footer__nav-item">
+                <a href="#" class="footer__nav-link">Manzilimiz</a>
+              </li>
+            </ul>
+            <ul class="footer__list">
+              <li class="footer__item">
+                <a href="#" class="footer__link" target="_blank">
+                  <i class="fa-brands fa-facebook-square"></i>
+                </a>
+              </li>
+              <li class="footer__item">
+                <a href="#" class="footer__link" target="_blank">
+                  <i class="fa-brands fa-twitter"></i>
+                </a>
+              </li>
+              <li class="footer__item">
+                <a href="#" class="footer__link" target="_blank">
+                  <i class="fa-brands fa-vimeo-v"></i>
+                </a>
+              </li>
+              <li class="footer__item">
+                <a href="#" class="footer__link" target="_blank">
+                  <i class="fa-brands fa-youtube"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer__ads">
+            <p class="footer__text">
+              © 2021 Dream Cloud. Barcha huquqlar himoyalangan.
+            </p>
+            <img class="footer__img" src="./imgs/vizitka.png" alt="vizitka" />
+          </div>
+          <button class="up"><i class="fa-solid fa-arrow-up"></i></button>
+        </div>
       </div>
->>>>>>> 48446b80fd22deb16ed2f1d0868e79a384d7fa1e
-   </footer>
-   <!-- modal -->
-   <div class="modal modal-slide">
+    </footer>
+    <!-- modal -->
+    <div class="modal modal-slide">
       <div class="modal__shadow"></div>
       <div class="modal__inner">
-         <div class="slide">
-            <div class="slide__for">
-               <div class="slide__for-item">
-                  <img src="./imgs/slider/img-1.png" alt="matras">
-               </div>
-               <div class="slide__for-item">
-                  <img src="./imgs/slider/img-2.png" alt="matras">
-               </div>
-               <div class="slide__for-item">
-                  <img src="./imgs/slider/img-3.png" alt="matras">
-               </div>
-               <div class="slide__for-item">
-                  <img src="./imgs/slider/img-4.png" alt="matras">
-               </div>
+        <div class="slide">
+          <div class="slide__for">
+            <div class="slide__for-item">
+              <img src="./imgs/slider/img-1.png" alt="matras" />
             </div>
-            <div class="slide__nav">
-               <div class="slide__nav-item">
-                  <img src="./imgs/slider/img-1.png" alt="matras">
-               </div>
-               <div class="slide__nav-item">
-                  <img src="./imgs/slider/img-2.png" alt="matras">
-               </div>
-               <div class="slide__nav-item">
-                  <img src="./imgs/slider/img-3.png" alt="matras">
-               </div>
-               <div class="slide__nav-item">
-                  <img src="./imgs/slider/img-4.png" alt="matras">
-               </div>
+            <div class="slide__for-item">
+              <img src="./imgs/slider/img-2.png" alt="matras" />
             </div>
-         </div>
+            <div class="slide__for-item">
+              <img src="./imgs/slider/img-3.png" alt="matras" />
+            </div>
+            <div class="slide__for-item">
+              <img src="./imgs/slider/img-4.png" alt="matras" />
+            </div>
+          </div>
+          <div class="slide__nav">
+            <div class="slide__nav-item">
+              <img src="./imgs/slider/img-1.png" alt="matras" />
+            </div>
+            <div class="slide__nav-item">
+              <img src="./imgs/slider/img-2.png" alt="matras" />
+            </div>
+            <div class="slide__nav-item">
+              <img src="./imgs/slider/img-3.png" alt="matras" />
+            </div>
+            <div class="slide__nav-item">
+              <img src="./imgs/slider/img-4.png" alt="matras" />
+            </div>
+          </div>
+        </div>
       </div>
-   </div>
+    </div>
 
-   <div class="modal modal-order">
+    <div class="modal modal-order">
       <div class="modal__shadow"></div>
       <div class="modal__inner">
-         <div class="order">
-            <div class="order__header">
-               <button class="order__close-btn"><i class="fa-solid fa-xmark"></i></button>
-               <p class="order__title">Buyurtma qilish</p>
-            </div>
-            <div class="order__hero">
-               <form action="https://echo.htmlacademy.ru/" method="post" class="order__form">
-                  <input class="order__input" name="name" type="text" placeholder="Ismingizni yozing" required>
-                  <div class="order__tel">
-                     <label class="order__tel-label" for="order-tel">+998</label>
-                     <input class="order__input order__tel-inp" id="order-tel" name="tel" type="tel" required>
-                  </div>
-                  <label for="order-address" class="order__label">Manzilni kiriting</label>
-                  <input class="order__input" id="order-address" name="address" type="text" required>
-                  <label for="order-address" class="order__label">Miqdorni kiriting</label>
-                  <div class="order__count">
-                     <button class="order__btn-minus order__count-btn" type="button">-</button>
-                     <input class="order__input order__count-inp" id="order-count" name="count" type="text" required
-                        readonly value="1">
-                     <button class="order__btn-plus order__count-btn" type="button">+</button>
-                  </div>
-                  <button class="order__submit-btn" type="submit">Yuborish</button>
-               </form>
-            </div>
-         </div>
+        <div class="order">
+          <div class="order__header">
+            <button class="order__close-btn">
+              <i class="fa-solid fa-xmark"></i>
+            </button>
+            <p class="order__title">Buyurtma qilish</p>
+          </div>
+          <div class="order__hero">
+            <form
+              action="https://echo.htmlacademy.ru/"
+              method="post"
+              class="order__form"
+            >
+              <input
+                class="order__input"
+                name="name"
+                type="text"
+                placeholder="Ismingizni yozing"
+                required
+              />
+              <div class="order__tel">
+                <label class="order__tel-label" for="order-tel">+998</label>
+                <input
+                  class="order__input order__tel-inp"
+                  id="order-tel"
+                  name="tel"
+                  type="tel"
+                  required
+                />
+              </div>
+              <label for="order-address" class="order__label"
+                >Manzilni kiriting</label
+              >
+              <input
+                class="order__input"
+                id="order-address"
+                name="address"
+                type="text"
+                required
+              />
+              <label for="order-address" class="order__label"
+                >Miqdorni kiriting</label
+              >
+              <div class="order__count">
+                <button class="order__btn-minus order__count-btn" type="button">
+                  -
+                </button>
+                <input
+                  class="order__input order__count-inp"
+                  id="order-count"
+                  name="count"
+                  type="text"
+                  required
+                  readonly
+                  value="1"
+                />
+                <button class="order__btn-plus order__count-btn" type="button">
+                  +
+                </button>
+              </div>
+              <button class="order__submit-btn" type="submit">Yuborish</button>
+            </form>
+          </div>
+        </div>
       </div>
-   </div>
+    </div>
 
-   <!-- JS Files -->
-    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
-    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <!-- JS Files -->
+    <script
+      type="text/javascript"
+      src="//code.jquery.com/jquery-1.11.0.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="//code.jquery.com/jquery-migrate-1.2.1.min.js"
+    ></script>
     <script type="text/javascript" src="slick/slick.min.js"></script>
-   <script type="text/javascript">
-      $('.fade').slick({
-         autoplay: true,
-         autoplaySpeed: 4000,
+    <script type="text/javascript">
+      $(".fade").slick({
+        autoplay: true,
+        autoplaySpeed: 4000,
       });
-      $('.fades').slick({
-         autoplay: true,
-         autoplaySpeed: 4000,
-         speed: 500,
-         fade: true,
-         cssEase: 'linear'
+      $(".fades").slick({
+        autoplay: true,
+        autoplaySpeed: 4000,
+        speed: 500,
+        fade: true,
+        cssEase: "linear",
       });
     </script>
-   <!-- temps -->
-   <!-- JS File -->
-   <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js"
-      integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
-   <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-   <script src="./js/main.js"></script>
-
-</body>
-
+    <!-- temps -->
+    <!-- JS File -->
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.slim.min.js"
+      integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      type="text/javascript"
+      src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+    ></script>
+    <script src="./js/main.js"></script>
+  </body>
 </html>
