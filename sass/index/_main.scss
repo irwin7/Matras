@@ -1,0 +1,95 @@
+.main {
+  padding: 50px 0;
+  background: #EABF9F;
+
+  &__inner {
+    height: 500px;
+  }
+
+  &__title {
+    max-width: 750px;
+    font-size: 80px;
+    line-height: 90px;
+    margin: 0;
+    margin-bottom: 1rem;
+    padding-top: 30px;
+  }
+
+  &__btn {
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: 2px solid $cl-primary;
+    color: $cl-primary;
+    background: #fff;
+    transition: color 0.3s ease,
+    background 0.3s ease;
+
+    &:hover {
+      color: #fff;
+      background: $cl-primary;
+    }
+
+    &2 {
+      display: none;
+    }
+  }
+
+  .fade {
+    position: relative;
+    top: -200px;
+
+    img {
+      margin-left: auto;
+    }
+
+    button {
+      display: none !important;
+    }
+  }
+}
+
+@include breakpoint-down (1050px) {
+  .main {
+    &__inner {
+      height: auto;
+    }
+
+    &__title {
+      font-size: 60px;
+      line-height: 60px;
+      padding-top: 0;
+    }
+
+    &__btn {
+      display: none;
+      
+      &2 {
+        display: inline-block;
+        margin-top: 20px;
+      }
+    }
+
+    .fade {
+      top: 0;
+    }
+  }
+}
+
+@include breakpoint-down (630px) {
+  .main {
+    padding-top: 20px;
+
+    &__title {
+      font-size: 50px;
+    }
+  }
+}
+
+@include breakpoint-down (525px) {
+  .main {
+    &__title {
+      font-size: 40px;
+      line-height: 40px;
+    }
+  }
+}

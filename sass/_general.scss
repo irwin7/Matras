@@ -17,13 +17,8 @@ body {
   height: 100%;
   margin: 0;
   overflow-x: hidden;
-  font-family: $font-serif;
-  color: $cl-txt;
-}
-
-.all {
-  background: #fff;
-  margin-bottom: 30px;
+  font-family: $font-rale;
+  color: $cl-primary;
 }
 
 img {
@@ -34,16 +29,4 @@ img {
 .row {
   margin-left: 0 !important;
   margin-right: 0 !important;
-}
-
-@include breakpoint-down($max-lg) {
-  .all {
-    padding: 0 50px;
-  }
-}
-
-@include breakpoint-down($max-md) {
-  .all {
-    padding: 0;
-  }
 }

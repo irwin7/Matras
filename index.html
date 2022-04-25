@@ -12,17 +12,111 @@
    <link rel="stylesheet" href="./css/flex-box.css">
    <link rel="stylesheet" href="./css/global.css">
    <link rel="stylesheet" href="./css/main.min.css">
-   <title> TITLE </title>
+   <title> Matras </title>
+   <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+   <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
 </head>
 <body>
 
    <header id="header" class="header">
+      <div class="header__modal modal">
+         <div class="modal__inner">
+            <ul class="modal__list"></ul>
+            <a class="header__btn modal__btn" href="#">Buyurtma berish</a>
+         </div>
+         <div class="modal__wrapper">
+            <a class="header__call modal__call row align-center" href='tel:+992'>
+               <img src="./images/phone.svg" width="20">
+               +998 90 123 45 67
+            </a>
+         </div>
+      </div>
+      <div class="header__modals modals">
+         <div class="modals__inner center-absolute">
+            <button class="modals__close">
+               <i class="fal fa-times"></i>
+            </button>
+            <span class="modals__title">Buyurtma qilish</span>
+            <form class="modals__form form" action="html-academy.php">
+               <input class="form__inp" type="text" placeholder="Ismingizni yozing">
+               <label class="form__lnum row between align-center">
+                  <span>+998</span>
+                  <input class="form__inp form__inp-num" type="number">
+               </label>
+               <label class="form__label">
+                  <span>Mahsulotlarni toifasini tanlang</span>
+                  <input class="form__inp" type="text">
+                  <i class="far fa-angle-down"></i>
+               </label>
+               <label class="form__label">
+                  <span>Miqdorni tanlang</span>
+                  <div class="row between align-center">
+                     <button class="count count-m" type="button">-</button>
+                     <input class="form__inp form__inp-count" value='1'>
+                     <button class="count count-p" type="button">+</button>
+                  </div>
+               </label>
+               <button class="form__btn" type="button">Yuborish</button>
+               <button></button>
+            </form>
+         </div>
+         <div class="modals__wrapper wrap center-absolute">
+            <button class="wrap__close">
+               <i class="far fa-times"></i>
+            </button>
+            <p class="wrap__title">Arizangiz muvaffaqiyatli yuborildi</p>
+            <img src="./images/modals-img.svg" alt="img">
+            <p class="wrap__txt">Tez orada operatorlarimiz siz bilan bog’lanishadi</p>
+            <button class="wrap__btn">Ok</button>
+         </div>
+      </div>
+      <div class="container">
 
-      <!-- code here -->
+         <nav class="header__nav nav">
+            <ul class="nav__list row"></ul>
+         </nav>
+         <div class="header__inner row between">
+            <a href="index.html">
+               <img src="./images/logo.svg" alt="logo">
+            </a>
+            <div class="row align-center">
+               <a class="header__call row align-center" href='tel:+992'>
+                  <img src="./images/phone.svg" width="20">
+                  +998 90 123 45 67
+               </a>
+               <a class="header__btn modals__open" href="#">Buyurtma berish</a>
+               <button class="header__burger">
+                  <i class="far fa-bars"></i>
+               </button>
+               <button class="header__close">
+                  <i class="fal fa-times"></i>
+               </button>
+            </div>
+         </div>
 
+      </div>
    </header>
 
    <main>
+
+      <section id="main" class="main">
+         <div class="container">
+
+            <div class="main__inner relative-p">
+               <div class="relative-p" style="z-index: 5;">
+                  <h1 class="main__title">Kechalari sokin dam oling</h1>
+                  <a class="main__btn" href="#">Kategoriyalar</a>
+               </div>
+               <div class="fade">
+                  <div><img src="./images/matras1.png" alt="matras"></div>
+                  <div><img src="./images/matras1.png" alt="matras"></div>
+                  <div><img src="./images/matras1.png" alt="matras"></div>
+               </div>
+               <a class="main__btn main__btn2" href="#">Kategoriyalar</a>
+            </div>
+
+         </div>
+      </section>
 
       <section id="statistics">
          <!-- rowan -->
@@ -32,8 +126,118 @@
          <!-- rowan -->
       </section>
 
-      <section id="technologies">
+      <section id="about" class="about">
+         <div class="container">
 
+            <div class="about__inner row between align-center">
+               <div class="about__titles">
+                  <h2>Dream Cloud kompaniyasi haqida</h2>
+                  <p>Penatibus viverra gravida rhoncus in. At turpis morbi ante tortor a est. Habitant adipiscing ut sed pulvinar tellus, ut urna, fermentum:</p>
+                  <ul>
+                     <li>Penatibus viverra gravida rhoncus in.</li>
+                     <li>Dolor integer in interdum viverra risus dolor enim.</li>
+                     <li>Penatibus viverra gravida rhoncus in</li>
+                  </ul>
+               </div>
+               <img src="./images/about1.jpg" alt="about">
+            </div>
+            <div class="about__inner about__wrapper row between align-center">
+               <div class="about__titles">
+                  <p>Libero erat praesent ullamcorper eget tortor sed et. Nec id lobortis gravida vitae. Scelerisque id fusce vitae ut. Integer sed vulputate sed nec. Arcu id mattis erat et id. </p>
+                  <ul>
+                     <li>Penatibus viverra gravida rhoncus in.</li>
+                     <li>Dolor integer in interdum viverra risus dolor enim.</li>
+                     <li>Penatibus viverra gravida rhoncus in</li>
+                     <li>Dolor integer in interdum viverra risus dolor enim.</li>
+                  </ul>
+                  <p class="txt">Ac tortor volutpat pellentesque mauris nisi, praesent. Et tempus accumsan est elementum feugiat arcu mauris tincidunt. Eget faucibus pharetra et luctus eget ut fames. A cursus elementum egestas eu scelerisque id.</p>
+               </div>
+               <img src="./images/about2.jpg" alt="about">
+            </div>  
+
+         </div>
+      </section>
+
+      <section id="choose" class="choose">
+         <div class="container">
+
+            <h2>Nega bizni tanlashadi</h2>
+            <ul class="row between">
+               <li>
+                  <img src="./images/choose1.jpg" alt="img">
+                  <div class="titles">
+                     <h3>Yetkazib berish</h3>
+                     <p>Toshkent bo'ylab bepul o'lchov va etkazib berish</p>
+                  </div>
+               </li>
+               <li>
+                  <img src="./images/choose2.jpg" alt="img">
+                  <div class="titles">
+                     <h3>Qo'llab-quvvatlash</h3>
+                     <p>Bizning qo'llab-quvvatlash xizmati sizga har qanday savolda yordam beradi va menejerlarning </p>
+                  </div>
+               </li>
+               <li>
+                  <img src="./images/choose3.jpg" alt="img">
+                  <div class="titles">
+                     <h3>Kafolat</h3>
+                     <p>Biz matraslarimiz uchun 8 yilgacha kafolat beramiz. Agar matras kamida 25 mm qisqartirilsa.</p>
+                  </div>
+               </li>
+            </ul>
+
+         </div>
+      </section>
+
+      <section id="locate" class="locate">
+         <div class="container">
+
+            <div class="fades">
+               <div>
+                  <div class="locates row between align-center">
+                     <div class="titles">
+                        <h2>Manzilimiz</h2>
+                        <h3>Toshkent, Parkent ko'chasi, 176-uy</h3>
+                        <p>Mo’ljal: Qoraqamish 2/1, Tursunxodjayeva ro’parasi, Milliy bog’ metro bekati.</p>
+                        <button>
+                           <i class="far fa-map-marker-alt"></i>
+                           Geolokatsiya
+                        </button>
+                     </div>
+                     <img src="./images/locate1.jpg" alt="locate">
+                  </div>
+               </div>
+               <div>
+                  <div class="locates row between align-center">
+                     <div class="titles">
+                        <h2>Manzilimiz</h2>
+                        <h3>Toshkent, Umid ko'chasi, 13-uy</h3>
+                        <p>Mo’ljal: Qoraqamish 2/1, Tursunxodjayeva ro’parasi, Milliy bog’ metro bekati.</p>
+                        <button>
+                           <i class="fas fa-map-marker-alt"></i>
+                           Geolokatsiya
+                        </button>
+                     </div>
+                     <img src="./images/choose3.jpg" alt="locate">
+                  </div>
+               </div>
+               <div>
+                  <div class="locates row between align-center">
+                     <div class="titles">
+                        <h2>Manzilimiz</h2>
+                        <h3>Toshkent, Amir Temur ko'chasi, 98-uy</h3>locates 
+                        <p>Mo’ljal: Qoraqamish 2/1, Tursunxodjayeva ro’parasi, Milliy bog’ metro bekati.</p>
+                        <button>
+                           <i class="fad fa-map-marker-alt"></i>
+                           Geolokatsiya
+                        </button>
+                     </div>
+                     <img src="./images/about2.jpg" alt="locate">
+                  </div>
+               </div>
+            </div>
+
+         </div>
       </section>
 
    </main>
@@ -41,10 +245,27 @@
    <footer id="footer" class="footer">
 
       <!-- code here -->
+      
 
    </footer>
 
-   <!-- JS File -->
+   <!-- JS Files -->
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="slick/slick.min.js"></script>
+   <script type="text/javascript">
+      $('.fade').slick({
+         autoplay: true,
+         autoplaySpeed: 4000,
+      });
+      $('.fades').slick({
+         autoplay: true,
+         autoplaySpeed: 4000,
+         speed: 500,
+         fade: true,
+         cssEase: 'linear'
+      });
+    </script>
    <script src="./js/main.js"></script>
    
 </body>
